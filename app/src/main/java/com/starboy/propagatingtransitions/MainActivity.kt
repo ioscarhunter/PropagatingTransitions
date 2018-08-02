@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             ItemModel(R.drawable.coffee, "----", "Max")
     )
 
-    private val fade = Fade(Fade.IN)
+    private val fade = Fade(Fade.IN).setInterpolator(AccelerateDecelerateInterpolator())
 
     private val slide = Slide(Gravity.BOTTOM)
 
